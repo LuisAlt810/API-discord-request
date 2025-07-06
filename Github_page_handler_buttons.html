@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Button Demo</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button { margin: 5px; padding: 10px 20px; font-size: 16px; }
+    #output { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Interactive Buttons</h1>
+  
+  <button id="btn1">Button 1</button>
+  <button id="btn2">Button 2</button>
+  <button id="btn3">Button 3</button>
+  
+  <div id="output">Click a button!</div>
+  
+  <script>
+    const output = document.getElementById('output');
+    document.getElementById('btn1').onclick = () => output.textContent = 'You clicked Button 1!';
+    document.getElementById('btn2').onclick = () => output.textContent = 'You clicked Button 2!';
+    document.getElementById('btn3').onclick = () => output.textContent = 'You clicked Button 3!';
+  </script>
+</body>
+</html>
